@@ -12,12 +12,14 @@ function EventDetails({ eventsByType }) {
     window.scrollTo(0, 0);
   }, []); 
   return (
+    
     <div className="container mx-auto px-4 pt-16">
       <h1 className="text-3xl font-bold mb-4">{eventType} Events</h1>
       {events.map((event, index) => (
-        <div key={event.name} className="flex flex-wrap items-center event-container">
+        <div key={event.name} className="  md :  flex flex-wrap items-center event-container   ">
           {(index % 2 === 0) ? (
             <>
+           
               <div className="w-full md:w-1/2 pr-4">
                 <h3 className="text-lg font-medium mb-2">{event.name}</h3>
                 <p className="text-gray-500 mb-4">{event.description}</p>
@@ -25,6 +27,7 @@ function EventDetails({ eventsByType }) {
               <div className="w-full md:w-1/2">
                 <img src={event.image} alt={event.name} className="w-full h-auto mb-2" />
               </div>
+              
             </>
           ) : (
             <>
@@ -40,6 +43,7 @@ function EventDetails({ eventsByType }) {
         </div>
       ))}
     </div>
+    
   );
 }
 
@@ -48,3 +52,6 @@ EventDetails.propTypes = {
 };
 
 export default EventDetails;
+
+
+

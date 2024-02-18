@@ -5,7 +5,7 @@ import { Link, Routes, Route } from 'react-router-dom';
 const Events = () => {
   const eventCards = Object.entries(eventsByType).map(([eventType, events]) => (
 
-    <div key={eventType} className="bg-gray-100 p-4 rounded-lg shadow-md">
+    <div key={eventType} className="bg-gray-100 p-4 rounded-lg shadow-md sm: mx-4 ">
       <h2 className="text-2xl font-bold mb-2">{eventType}</h2>
       <img
         src={events.image}
@@ -23,8 +23,8 @@ const Events = () => {
 
   return (
     <div id="events" className="py-20">
-      <h2 className="text-xl font-semibold">Events</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center my-4"> 
+      <h2 className="text-xl font-semibold sm : text-center">Events</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center my-4   "> 
         {eventCards}
       </div>
     </div>
