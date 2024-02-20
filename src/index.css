@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* styles.css */
+
+/* Define the custom scrollbar styles for WebKit browsers */
+/* You can customize these styles to fit your project's design */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #FFD700; /* Track color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #c51f13; /* Thumb color */
+    border-radius: 6px; /* Rounded corners for the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #c51f13; /* Thumb color on hover */
+  }
+  
+
+  /* CustomCursor.css */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  background-color: #ffcc00; /* Set your desired background color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease;
+  mix-blend-mode: difference; /* Optional: adjust blend mode based on your design */
+  z-index: 9999; /* Set a high z-index to make sure it's on top of other elements */
+}
+
+/*  custom cursor here */

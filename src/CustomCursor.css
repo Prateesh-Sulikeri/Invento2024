@@ -1,0 +1,16 @@
+/* CustomCursor.css */
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    background-color: #ffcc00; /* Set your desired background color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease;
+    mix-blend-mode: difference; /* Optional: adjust blend mode based on your design */
+    z-index: 9999; /* Set a high z-index to make sure it's on top of other elements */
+  }
+  
+  /* Add any additional styling for your custom cursor here */
+  
