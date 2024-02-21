@@ -1,7 +1,10 @@
 import React from "react";
 import { IoLogoGithub, IoLogoLinkedin, IoGlobeOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Developers = () => {
+  const backgroundImageUrl = `/images/DevBg.jpg`;
+
   // Sample data for developers
   const developers = [
     {

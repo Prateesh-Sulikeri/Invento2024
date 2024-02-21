@@ -1,12 +1,12 @@
 const eventsByType = {
   "Beauty and Talent Competitions": {
-    image: "https://source.unsplash.com/400x200/?beauty",
+    image: "../public/images/Group1.png",
     events: [
       {
         name: "Mr. and Miss Invento",
         image: "https://source.unsplash.com/400x200/?portrait",
         description: "Description of Mr. and Miss Invento. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit justo vel nisi laoreet, at convallis nisl volutpat.",
-        registrationLink: "link-to-mr_and_miss_invento-registration-page",
+        registrationLink: "https://github.com/Prateesh-Sulikeri/Invento2024/blob/test__branch/src/components/EventDetails.jsx",
       },
       {
         name: "Mr and Miss Fitness",
@@ -59,7 +59,7 @@ const eventsByType = {
     ],
   },
   "Visual Arts": {
-    image: "https://source.unsplash.com/400x200/?art",
+    image: "../public/images/Group1.png",
     events: [
       {
         name: "Poster Presentation",
@@ -88,7 +88,7 @@ const eventsByType = {
     ],
   },
   "Photography and Videography": {
-    image: "https://source.unsplash.com/400x200/?photography",
+    image: "../public/images/Group1.png",
     events: [
       {
         name: "Photography Exhibition",
@@ -111,7 +111,7 @@ const eventsByType = {
     ],
   },
   "Performing Arts": {
-    image: "https://source.unsplash.com/400x200/?performing",
+    image: "../public/images/Group1.png",
     events: [
       {
         name: "Mock Press",
@@ -158,7 +158,7 @@ const eventsByType = {
     ],
   },
   "Literary Events": {
-    image: "https://source.unsplash.com/400x200/?books",
+    image: "../public/images/Group1.png",
     events: [
       {
         name: "Poetry Slam",
@@ -169,7 +169,7 @@ const eventsByType = {
     ],
   },
   "Intellectual Challenges": {
-    image: "https://source.unsplash.com/400x200/?brain",
+    image: "../public/images/Group1.png",
     events: [
       {
         name: "Quiz Competitions (Quiz 1)",
@@ -186,7 +186,7 @@ const eventsByType = {
     ],
   },
   "Gaming Competitions": {
-    image: "https://source.unsplash.com/400x200/?gaming",
+    image: "../public/images/Group1.png",
     events: [
       {
         name: "Valorant Tournament",

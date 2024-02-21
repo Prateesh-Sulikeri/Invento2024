@@ -1,17 +1,20 @@
-import React from 'react';
-import hero from '../../public/images/hero.png'
+import React, { useRef } from 'react';
+import hero from '../../public/images/hero1.png';
+import bg from '../../public/images/bg_home.jpg';
+
 const Home = () => {
+  const homeSectionRef = useRef(null);
+  
   return (
-    <section id="home" className=" py-20 text-center">
-      <div className="container mx-auto">
-        {/* Main logo */}
-        <img src={hero} alt="Main Logo" className="mx-auto mb-8" style={{ maxWidth: '200px' }} />
-        
-        {/* Title */}
-        <h1 className="text-4xl font-bold mb-4">INVENTO 2024</h1>
-        
-        {/* Tagline */}
-        <p className="text-lg text-gray-700">Placeholder tagline goes here...</p>
+    <section
+      id="home"
+      ref={homeSectionRef}
+      className=" text-center bg-cover bg-center h-screen flex items-center justify-center"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <div className="container mx-auto mb-12">
+        <img src={hero} alt="Main Logo" className="mx-auto" style={{ width: '70%' }} />
+        <p className="text-xl py-10">Placeholder tagline goes here...</p>
       </div>
     </section>
   );
