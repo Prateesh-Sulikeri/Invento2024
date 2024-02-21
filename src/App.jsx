@@ -10,14 +10,16 @@ import Footer from './components/Footer'
 import Developers from './components/Developers'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import eventsByType from "./eventData";
-
+import './index.css'
+// import AnimCursor from './components/AnimCursor'
 
 function MainLayout() {
   return (
     <>
       <div className="bg-gray-200 min-h-screen">
+      {/* <AnimCursor/> */}
         <Navbar />
-        <div className="container mx-auto px-[200px] py-8">
+        <div className="">
           <Home />
           <Rulebook />
           <Calender />
@@ -33,9 +35,9 @@ function MainLayout() {
 function DeveloperLayout() {
   return (
     <>
-      <div className="bg-gray-200 min-h-screen">
+      <div className="bg-gray-200 min-h-screen sm : mx-2 ">
         <Navbar />
-        <div className="container mx-auto px-[200px] py-8">
+        <div className="container mx-auto ">
           <Developers/>
           <Footer />
         </div>
@@ -49,7 +51,7 @@ function EventLayout() {
     <>
       <div className="bg-gray-200 min-h-screen">
         <Navbar />
-        <div className="container mx-auto px-[200px] py-8">
+        <div className="">
         <EventDetails eventsByType={eventsByType} />
           <Footer />
         </div>
