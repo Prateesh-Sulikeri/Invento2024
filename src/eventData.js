@@ -1,6 +1,6 @@
 const eventsByType = {
   "Beauty and Talent Competitions": {
-    image: "../public/images/Group1.png",
+    image: "public/images/Group1.png",
     events: [
       {
         name: "Mr. and Miss Invento",
