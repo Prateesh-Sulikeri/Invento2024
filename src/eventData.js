@@ -186,7 +186,7 @@ const eventsByType = {
     ],
   },
   "Gaming Competitions": {
-    image: "../public/images/Group1.png",
+    image: "../public/images/luffy.png",
     events: [
       {
         name: "Valorant Tournament",
