@@ -6,7 +6,7 @@ import buttonImage from "../../public/images/button.png"; // Import button image
 
 const Events = () => {
   const eventCards = Object.entries(eventsByType).map(([eventType, events]) => (
-    <div key={eventType} className="relative">
+    <div key={eventType} className="relative items-center">
       <div className="relative bg-cover bg-no-repeat bg-center w-full m-2 rounded-lg drop-shadow-2xl shadow-2xl" style={{ backgroundImage: `url(${events.image})`, paddingBottom: '66.67%' }}>
         <div className="absolute bottom-0 left-0 right-0 p-4 bg-black opacity-60 rounded-b-lg flex justify-between items-center">
           <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-bold mb-2">{eventType}</h2>

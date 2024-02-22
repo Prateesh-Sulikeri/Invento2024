@@ -1,6 +1,15 @@
+import img1 from '../public/images/HR_Events.png';
+import img2 from '../public/images/Performing_arts.png';
+import img3 from '../public/images/tech_events.png';
+import img4 from '../public/images/fashion_events.png';
+import img5 from '../public/images/lit_events.png';
+import img6 from '../public/images/media_events.png';
+import img7 from '../public/images/gaming_events.png';
+import img8 from '../public/images/cdc_events.png';
+
 const eventsByType = {
   "Beauty and Talent Competitions": {
-    image: "public/images/Group1.png",
+    image: img4,
     events: [
       {
         name: "Mr. and Miss Invento",
@@ -59,7 +68,7 @@ const eventsByType = {
     ],
   },
   "Visual Arts": {
-    image: "../public/images/Group1.png",
+    image: img8,
     events: [
       {
         name: "Poster Presentation",
@@ -88,7 +97,7 @@ const eventsByType = {
     ],
   },
   "Photography and Videography": {
-    image: "../public/images/Group1.png",
+    image: img6,
     events: [
       {
         name: "Photography Exhibition",
@@ -111,7 +120,7 @@ const eventsByType = {
     ],
   },
   "Performing Arts": {
-    image: "../public/images/Group1.png",
+    image: img2,
     events: [
       {
         name: "Mock Press",
@@ -158,7 +167,7 @@ const eventsByType = {
     ],
   },
   "Literary Events": {
-    image: "../public/images/Group1.png",
+    image: img5,
     events: [
       {
         name: "Poetry Slam",
@@ -169,7 +178,7 @@ const eventsByType = {
     ],
   },
   "Intellectual Challenges": {
-    image: "../public/images/Group1.png",
+    image: img3,
     events: [
       {
         name: "Quiz Competitions (Quiz 1)",
@@ -186,7 +195,7 @@ const eventsByType = {
     ],
   },
   "Gaming Competitions": {
-    image: "../public/images/luffy.png",
+    image: img7,
     events: [
       {
         name: "Valorant Tournament",
