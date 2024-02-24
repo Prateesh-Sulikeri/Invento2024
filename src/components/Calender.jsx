@@ -1,6 +1,8 @@
 import React from "react";
-import bg from '../../public/images/bg_cal.jpg';
-import superman from '../../public/images/superman.png';
+import bg from '../../public/images/bg_cal2.jpg';
+import date1Image from '../../public/images/date1.png';
+import date2Image from '../../public/images/date2.png';
+import date3Image from '../../public/images/date3.png';
 
 const Calendar = () => {
   return (
@@ -11,45 +13,42 @@ const Calendar = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 px-8 gap-4 sm:mx-4">
         {/* Left side: calendar cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-white rounded-lg shadow-md">
-            {/* <img
-              src="https://via.placeholder.com/300"
+          <div className="bg-yellow-300 rounded-lg shadow-md bgdate">
+            <img
+              src={date1Image}
               alt="Date"
-              className="w-full h-40 object-cover rounded-t-lg"
-            /> */}
+              className="w-full h-80 object-contain rounded-t-lg"
+            />
             <div className="p-4">
-              <h2 className="text-xl font-semibold">9/03/2024</h2>
-              <p className="text-gray-600  py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit saepe autem iure, dignissimos mollitia natus, cumque quam pariatur veniam ad aliquid aliquam perferendis ex sapiente enim tenetur nihil eos. Amet.</p>
+              {/* <h2 className="text-xl font-semibold">9/03/2024</h2> */}
+              <p className="text-black  py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit saepe autem iure, .</p>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-md">
-            {/* <img
-              src="https://via.placeholder.com/300"
+          <div className="bg-red-700 rounded-lg shadow-md bgdate">
+            <img
+              src={date2Image}
               alt="Date"
-              className="w-full h-40 object-cover rounded-t-lg"
-            /> */}
+              className="w-full h-80 object-contain rounded-t-lg"
+            />
             <div className="p-4">
-              <h2 className="text-xl font-semibold">10/03/2024</h2>
-              <p className="text-gray-600 py-2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit saepe autem iure, dignissimos mollitia natus, cumque quam pariatur veniam ad aliquid aliquam perferendis ex sapiente enim tenetur nihil eos. Amet.</p>
+              {/* <h2 className="text-xl text-white font-semibold">10/03/2024</h2> */}
+              <p className="text-white py-2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit saepe autem iure, .</p>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-md">
-            {/* <img
-              src="https://via.placeholder.com/300"
+          <div className="bg-blue-600 rounded-lg shadow-md bgdate">
+            <img
+              src={date3Image}
               alt="Date"
-              className="w-full h-40 object-cover rounded-t-lg"
-            /> */}
+              className="w-full h-80 object-contain rounded-t-lg"
+            />
             <div className="p-4">
-              <h2 className="text-xl font-semibold">11/09/2024</h2>
-              <p className="text-gray-600  py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit saepe autem iure, dignissimos mollitia natus, cumque quam pariatur veniam ad aliquid aliquam perferendis ex sapiente enim tenetur nihil eos. Amet.</p>
+              {/* <h2 className="text-xl text-white font-semibold  ">11/09/2024</h2> */}
+              <p className="text-white  py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit saepe autem iure,.</p>
             </div>
           </div>
         </div>
 
-        {/* Right side: Superman image */}
-        <div className="hidden md:flex justify-center items-center w-full">
-          <img src={superman} alt="Superman" className="w-full h-auto max-w-md" /> {/* Adjusted the width here */}
-        </div>
+      
       </div>
     </div>
   );

@@ -11,13 +11,11 @@ import Developers from './components/Developers'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import eventsByType from "./eventData";
 import './index.css'
-// import AnimCursor from './components/AnimCursor'
 
 function MainLayout() {
   return (
     <>
       <div className="bg-gray-200 min-h-screen">
-      {/* <AnimCursor/> */}
         <Navbar />
         <div className="">
           <Home />
@@ -35,13 +33,10 @@ function MainLayout() {
 function DeveloperLayout() {
   return (
     <>
-      <div className="bg-gray-200 min-h-screen sm : mx-2 ">
-        <Navbar />
-        <div className="container mx-auto ">
+      <div className="bg-orange-400 min-h-screen">
           <Developers/>
           <Footer />
         </div>
-      </div>
     </>
   );
 }
@@ -50,12 +45,9 @@ function EventLayout() {
   return (
     <>
       <div className="bg-gray-200 min-h-screen">
-        <Navbar />
-        <div className="">
         <EventDetails eventsByType={eventsByType} />
           <Footer />
         </div>
-      </div>
     </>
   );
 }

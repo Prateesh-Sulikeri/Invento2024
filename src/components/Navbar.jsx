@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import hero from '../../public/images/hero.png'; 
+import hero from "../../public/images/hero.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -27,31 +27,35 @@ const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setMobileMenuOpen(false); 
+      setMobileMenuOpen(false);
     }
   };
 
   return (
-    <nav className={`p-4 fixed top-0 w-full z-10 transition-all duration-300 ${navbarClass}`}>
-      <div className={`container mx-auto flex justify-between items-center px-[10%] ${hiddenClass}`}> 
+    <nav
+      className={`p-4 fixed top-0 w-full z-10 transition-all duration-300 ${navbarClass}`}
+    >
+      <div
+        className={`container mx-auto flex justify-between items-center px-[10%] ${hiddenClass}`}
+      >
         <Link to="/" className="flex items-center">
-          <img src={hero} alt="Main Logo" className="h-14 md:px-12" /> 
+          <img src={hero} alt="Main Logo" className="h-14 md:px-12" />
         </Link>
-        <div className="hidden md:flex space-x-8 justify-center"> 
+        <div className="hidden md:flex space-x-8 justify-center">
           <Link
             to="/"
             onClick={() => scrollToSection("home")}
-            className={`hover:text-gray-300 ${
-              location.pathname === "/" && "text-gray-500"
+            className={`text-2xl font-bangers ${
+              location.pathname === "/" && ""
             }`}
-            >
+          >
             Home
           </Link>
           <Link
             to="/"
             onClick={() => scrollToSection("events")}
-            className={`hover:text-gray-300 ${
-              location.pathname === "/" && "text-gray-500"
+            className={` text-2xl font-bangers ${
+              location.pathname === "/" && ""
             }`}
           >
             Events
@@ -59,23 +63,23 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={() => scrollToSection("about")}
-            className={`hover:text-gray-300 ${
-              location.pathname === "/" && "text-gray-500"
+            className={` text-2xl font-bangers ${
+              location.pathname === "/" && ""
             }`}
           >
             About
           </Link>
           <Link
             to={`/developers`}
-            className={`hover:text-gray-300 ${
-              location.pathname === "/developers" && "text-gray-500"
+            className={` text-2xl font-bangers ${
+              location.pathname === "/developers" && ""
             }`}
           >
             Developers
           </Link>
           <button
             onClick={() => scrollToSection("footer")}
-            className="hover:text-gray-300"
+            className=" text-2xl font-bangers"
           >
             Contact
           </button>
@@ -96,28 +100,31 @@ const Navbar = () => {
             <Link
               to="/"
               onClick={() => scrollToSection("home")}
-              className="py-4"
+              className="py-4 text-2xl font-bangers"
             >
               Home
             </Link>
             <Link
               to="/"
               onClick={() => scrollToSection("events")}
-              className="py-4"
+              className="py-4 text-2xl font-bangers"
             >
               Events
             </Link>
             <Link
               to="/"
               onClick={() => scrollToSection("about")}
-              className="py-4"
+              className="py-4 text-2xl font-bangers"
             >
               About
             </Link>
-            <Link to={`/developers`} className="py-4">
+            <Link to={`/developers`} className="py-4 text-2xl font-bangers">
               Developers
             </Link>
-            <button onClick={() => scrollToSection("footer")} className="py-4">
+            <button
+              onClick={() => scrollToSection("footer")}
+              className="py-4 text-2xl font-bangers"
+            >
               Contact
             </button>
           </div>

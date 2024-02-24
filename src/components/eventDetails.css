@@ -1,0 +1,10 @@
+/* external stylesheet */
+@media (max-width: 768px) {
+    /* Adjusting the position of the button */
+    .fixed-button {
+      right: 1rem !important;
+      bottom: 10% !important;
+      top: auto !important;
+    }
+  }
+  
