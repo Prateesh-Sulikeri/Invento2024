@@ -10,8 +10,8 @@ const About = () => {
       style={{ backgroundImage: `url(${bg})` }}
     >
         <div className="w-1/2 md:px-8">
-          <h2 className="text-3xl font-bold mb">About </h2>
-          <p className="text-xl py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque mollitia illo ipsam praesentium placeat voluptatibus cum reiciendis amet, magni suscipit facere beatae repudiandae doloremque laboriosam.</p>
+          <h2 className="text-6xl mb font-bangers">About </h2>
+          <p className="text-xl py-10 font-oregano">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque mollitia illo ipsam praesentium placeat voluptatibus cum reiciendis amet, magni suscipit facere beatae repudiandae doloremque laboriosam.</p>
         </div>
     </section>
   );
