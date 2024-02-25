@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import hero from "../../public/images/hero1.png";
 import bg from "../../public/images/bg_home.jpg";
 import FlyInOnScroll from "./FlyInOnScroll";
+import star from "../../public/images/star.png"
 import "./components.css"
 
 const Home = () => {
@@ -53,12 +54,12 @@ const Home = () => {
           </p>
         </div>
         <img
-          src="../../public/images/star.png"
+          src={star}
           alt="Star"
           className="absolute top-[22%] right-[15%] md:top-[15%] md:right-[27%] w-12 md:w-[5%] animate-twinkle-initial" 
         />
         <img
-          src="../../public/images/star.png"
+          src={star}
           alt="Star"
           className="absolute bottom-[40%] left-8 md:bottom-[15%] md:left-[30%] w-16 animate-twinkle-alternate"
         />
