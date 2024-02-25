@@ -8,6 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 import pfp from "../../public/images/pfp.jpg";
+import FlyInOnScroll from "./FlyInOnScroll";
 
 const Developers = () => {
   const developers = [
@@ -96,11 +97,15 @@ const Developers = () => {
         <IoHome className="text-xl" />
         <Tooltip id="my-tooltip" />
       </Link>
+      <FlyInOnScroll>
       <h1 className="text-4xl md:text-6xl mb-6 text-center font-bangers"style={{ WebkitTextStrokeWidth: '0.5px', WebkitTextStrokeColor: 'white' }} >
         Meet Our Developers
       </h1>
+      </FlyInOnScroll>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-[15%] py-10">
         {developers.map((developer) => (
+          <FlyInOnScroll key={developer.id}>
+
           <div
             key={developer.id}
             className="bg-white rounded-lg shadow-2xl p-4 flex flex-col items-center h-full"
@@ -150,6 +155,8 @@ const Developers = () => {
               </a>
             </div>
           </div>
+          </FlyInOnScroll>
+
         ))}
       </div>
     </div>

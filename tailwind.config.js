@@ -13,7 +13,8 @@ export default {
         'gorditas': ['Gorditas', 'sans-serif'],
         'oregano': ['Oregano', 'cursive'],
         'Mouse': ['Mouse Memoirs', 'cursive'],
-        'ribeye': ["Ribeye", 'serif']
+        'ribeye': ["Ribeye", 'serif'],
+        'marker': ["Permanent Marker", "cursive"]
       }
     },
   },
