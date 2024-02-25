@@ -1,38 +1,48 @@
 @keyframes twinkle-initial {
-    0% {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.2);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0.8);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
   }
-  
-  @keyframes twinkle-alternate {
-    0% {
-      opacity: 1;
-      transform: scale(1.2);
-    }
-    50% {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1.2);
-    }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
   }
-  
-  .animate-twinkle-initial {
-    animation: twinkle-initial 3s infinite alternate; /* Alternate animation added */
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
   }
-  
-  .animate-twinkle-alternate {
-    animation: twinkle-alternate 3s infinite alternate; /* Alternate animation added */
+}
+
+@keyframes twinkle-alternate {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
   }
-  
+  50% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-twinkle-initial {
+  animation: twinkle-initial 3s infinite alternate; /* Alternate animation added */
+}
+
+.animate-twinkle-alternate {
+  animation: twinkle-alternate 3s infinite alternate; /* Alternate animation added */
+}
+
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px); /* Adjust the distance you want the image to move */
+  }
+}
+
