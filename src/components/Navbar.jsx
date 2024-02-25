@@ -9,7 +9,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
+      const isScrolled = window.scrollY > 30;
       setScrolling(isScrolled);
     };
 
@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`p-4 fixed top-0 w-full z-10 transition-all duration-300 ${navbarClass}`}
+      className={`p-4 fixed top-0 w-full z-20 transition-all duration-300 ${navbarClass}`} // Set z-index to 20
     >
       <div
         className={`container mx-auto flex justify-between items-center px-[10%] ${hiddenClass}`}
@@ -118,7 +118,10 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link to={`/developers`} className="py-4 text-2xl font-bangers">
+            <Link
+              to={`/developers`}
+              className="py-4 text-2xl font-bangers"
+            >
               Developers
             </Link>
             <button

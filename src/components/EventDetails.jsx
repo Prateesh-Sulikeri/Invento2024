@@ -5,7 +5,8 @@ import bg from "../../public/images/bg_events1.png";
 import { IoHome } from "react-icons/io5";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-import "./eventDetails.css"
+import "./eventDetails.css";
+import FlyInOnScroll from "./FlyInOnScroll";
 
 function EventDetails({ eventsByType }) {
   const { eventType } = useParams();
@@ -24,62 +25,70 @@ function EventDetails({ eventsByType }) {
       }}
     >
       <div className="container mx-auto py-16 px-4">
-        <Link
-          to="/"
-          data-tooltip-id="my-tooltip"
-          data-tooltip-content="Back To Home!!"
-          data-tooltip-place="bottom"
-          className="fixed fixed-button flex items-center justify-center w-12 h-12 rounded-full bg-blue-900 text-white shadow-sm hover:shadow-md transition-all duration-300"
-          style={{
-            backgroundImage: "url(../../public/images/rbbtn.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            right: "4rem",
-            top: "4rem",
-            zIndex: "9999", // Ensure the link stays on top
-          }}
-        >
-          <IoHome className="text-xl" />
-          <Tooltip id="my-tooltip" />
-        </Link>
-
-        <h1 className="text-6xl font-bangers text-center mb-8">
-          <span className="speech-bubble font-Bangers">{eventType} Events</span>
-        </h1>
-        {events.map((event, index) => (
-          <div
-            key={event.name}
-            className={`comic-panel flex flex-col mb-12 ${
-              index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-            }`}
-            style={{ alignItems: "center", gap: "30px" }}
+          <Link
+            to="/"
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Back To Home!!"
+            data-tooltip-place="bottom"
+            className="fixed fixed-button flex items-center justify-center w-12 h-12 rounded-full bg-blue-900 text-white shadow-sm hover:shadow-md transition-all duration-300"
+            style={{
+              backgroundImage: "url(../../public/images/rbbtn.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              right: "4rem",
+              top: "4rem",
+              zIndex: "9999", // Ensure the link stays on top
+            }}
           >
+            <IoHome className="text-xl" />
+            <Tooltip id="my-tooltip" />
+          </Link>
+
+        <FlyInOnScroll>
+          <h1 className="text-6xl font-bangers text-center mb-8">
+            <span className="speech-bubble font-Bangers">
+              {eventType} Events
+            </span>
+          </h1>
+        </FlyInOnScroll>
+        {events.map((event, index) => (
+          <FlyInOnScroll key={event.name}>
             <div
-              className={`w-full mb-4 md:w-1/2 ${
-                index % 2 === 0 ? "md:order-1 md:pl-4" : "md:order-2 md:pr-4"
+              key={event.name}
+              className={`comic-panel flex flex-col mb-12 ${
+                index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
               }`}
+              style={{ alignItems: "center", gap: "30px" }}
             >
-              <img
-                src={event.image}
-                alt={event.name}
-                className="w-full rounded-lg shadow-md"
-              />
-            </div>
-            <div className="w-full md:w-1/2 pl-6 md:pl-4">
-              <h3 className="text-5xl font-medium mb-4 font-bangers">
-                {event.name}
-              </h3>
-              <p className=" mb-4 text-2xl font-oregano">{event.description}</p>
-              <a
-                href={event.registrationLink}
-                target="_blank"
-                className="button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              <div
+                className={`w-full mb-4 md:w-1/2 ${
+                  index % 2 === 0 ? "md:order-1 md:pl-4" : "md:order-2 md:pr-4"
+                }`}
               >
-                Register Now
-              </a>
+                <img
+                  src={event.image}
+                  alt={event.name}
+                  className="w-full rounded-lg shadow-md"
+                />
+              </div>
+              <div className="w-full md:w-1/2 pl-6 md:pl-4">
+                <h3 className="text-5xl font-medium mb-4 font-bangers">
+                  {event.name}
+                </h3>
+                <p className=" mb-4 text-2xl font-oregano">
+                  {event.description}
+                </p>
+                <a
+                  href={event.registrationLink}
+                  target="_blank"
+                  className="button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  Register Now
+                </a>
+              </div>
             </div>
-          </div>
+          </FlyInOnScroll>
         ))}
       </div>
     </div>
